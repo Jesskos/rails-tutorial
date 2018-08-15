@@ -1,0 +1,29 @@
+Section 1.1.1 Questions
+1. Which website hosts the Ruby gem for Ruby on Rails? Hint: When in doubt, Google it.
+RubyGems is a package manager for Ruby programming language that provides standard format for distributing Ruby programs and libraries, a tool designed to easily manage the installation of gems, and a server for distributing them (wiki).
+It was developed in MIT, and currently hosted on rubygems.org.
+
+2. What is the current version number of Rails?
+The latest version is 5.2, which became available on 4/9/18.
+
+3. sAs of this moment, how many total times has Ruby on Rails been downloaded?
+On 8/14/18 at 6:35 PM, it had 140,097 downloads.
+
+Section 1.3.2 Questions
+1. According to the default Rails page, what is the version of Ruby on your system? 
+
+Confirm by running ruby -v at the command line. 
+ruby 2.3.1
+
+2. What is the version of Rails? Confirm that it matches the version installed in Listing 
+5.1.6
+
+Section 1.3.4 Questions
+1. Change the content of the hello action in Listing 1.7 to read “hola, mundo!” instead of “hello, world!”.
+
+Changed "hello, world!" to "Hola, Mundo!" by changing it in config. 
+2. Show that Rails supports non-ASCII characters by including an inverted exclamation point, as in “¡Hola, mundo!” (Figure 1.16).19 To get a ¡ character on a Mac, you can use Option-1; otherwise, you can always copy-and-paste the character into your editor. 
+Added upside-down exclamation point with success
+
+3. By following the example of the hello action in Listing 1.7, add a second action called goodbye that renders the text “goodbye, world!”. Edit the routes file from Listing 1.9 so that the root route goes to goodbye instead of to hello (Figure 1.17).
+Added goodbye function in controllers, and rerouted in config/routes
