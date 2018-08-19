@@ -1,3 +1,4 @@
+Section 2.2.1
 1. (For readers who know CSS) Create a new user, then use your browser’s HTML inspector to determine the CSS id for the text “User was successfully created.” What happens when you refresh your browser?
 
 - it has the id "notice"
@@ -11,3 +12,21 @@ It still creates a user, but email is left blank
 
 4. Destroy each of the users created in the previous exercises. Does Rails display a message by default when a user is destroyed?
 yes
+
+Section 2.2.2
+1. By referring to Figure 2.11, write out the analogous steps for visiting the URL /users/1/edit.
+
+1. Browser issues a request for the users URL (same)
+2. Rails routes /users/1/edit  in the Users Controller (same)
+3. The action asks the User model to 
+
+2. Find the line in the scaffolding code that retrieves the user from the database in the previous exercise.
+
+~controller.users_controller.rb
+class UsersController < ApplicationController
+  # GET /users/1/edit
+  def edit
+  end
+
+3. What is the name of the view file for the user edit page?
+edit.html.erb
