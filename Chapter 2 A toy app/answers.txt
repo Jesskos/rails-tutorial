@@ -35,3 +35,15 @@ class UsersController < ApplicationController
 
 3. What is the name of the view file for the user edit page?
 edit.html.erb
+
+Section 2.3.1
+1. (For readers who know CSS) Create a new micropost, then use your browser’s HTML inspector to determine the CSS id for the text “Micropost was successfully created.” What happens when you refresh your browser?
+- the CSS id is also "notice"; the message flashes and disappears when page is refreshed. 
+
+2. Try to create a micropost with empty content and no user id.
+- micro post successfully creates
+
+3. Try to create a micropost with over 140 characters of content (say, the first paragraph from the Wikipedia article on Ruby).
+It still creates 
+
+Destroy the microposts from the previous exercises.
