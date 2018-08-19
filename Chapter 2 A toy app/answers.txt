@@ -16,12 +16,12 @@ yes
 Section 2.2.2
 1. By referring to Figure 2.11, write out the analogous steps for visiting the URL /users/1/edit.
 
-1. Browser issues a request for the users URL (same)
-2. Rails routes /users/1/edit in the Users Controller (same)
-3. The edit action asks the User model to retrieve user information
-4. The User model pulls User 1 from the database
-5. The user model returns User 1 to the controller
-6. The controller captures the users information 
+1. Browser issues a request for the users/1/edit URL (same)
+2. Rails routes /users/1/edit in the edit action in Users Controller (same)
+3. The edit action asks the User model to retrieve user 1's information
+4. The User model pulls user 1's information from the database
+5. The User model returns user 1 to the controller
+6. The controller captures the users information, which is passed back to edit
 7. view sends its HTML to controller
 8. Controller then sends HTML info from view to browser
 
