@@ -47,3 +47,10 @@ Section 2.3.1
 It still creates 
 
 Destroy the microposts from the previous exercises.
+
+Section 2.3.2
+Try to create a micropost with the same long content used in a previous exercise (Section 2.3.1.1). How has the behavior changed?
+- received error message "Content is too long (maximum is 140 characters)"
+
+(For readers who know CSS) Use your browser’s HTML inspector to determine the CSS id of the error message produced by the previous exercise.
+The id is error explanation 
