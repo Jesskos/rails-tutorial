@@ -54,3 +54,11 @@ Try to create a micropost with the same long content used in a previous exercise
 
 (For readers who know CSS) Use your browser’s HTML inspector to determine the CSS id of the error message produced by the previous exercise.
 The id is error explanation 
+
+Section 2.3.3
+1. Edit the user show page to display the content of the user’s first micropost. (Use your technical sophistication (Box 1.1) to guess the syntax based on the other content in the file.) Confirm by visiting /users/1 that it worked.
+<%= @user.microposts.first.content %> in view/show.html.erb
+
+2. The code in Listing 2.16 shows how to add a validation for the presence of micropost content in order to ensure that microposts can’t be blank. Verify that you get the behavior shown in Figure 2.16.
+
+3.Update Listing 2.17 by replacing FILL_IN with the appropriate code to validate the presence of name and email attributes in the User model (Figure 2.17).
