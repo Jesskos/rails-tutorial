@@ -60,5 +60,6 @@ Section 2.3.3
 <%= @user.microposts.first.content %> in view/show.html.erb
 
 2. The code in Listing 2.16 shows how to add a validation for the presence of micropost content in order to ensure that microposts can’t be blank. Verify that you get the behavior shown in Figure 2.16.
+- added presence: true to app/models/micropost.rb
 
 3.Update Listing 2.17 by replacing FILL_IN with the appropriate code to validate the presence of name and email attributes in the User model (Figure 2.17).
