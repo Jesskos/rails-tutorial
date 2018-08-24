@@ -19,7 +19,9 @@ attr_accessor :first, :last, :email
     end
 end
 
+#Notes from Tutorial:
 # creates getter and setter methods to allow us to retrieve get and assign set@name and @email instance variables
 # instance variables always begin with an @ sign
 # initialize method is a specialized Ruby method, called when we execute User.new
 # require is used to load example user code
+# Recall that we can omit hash for final for assignment
