@@ -1,5 +1,8 @@
 <%= @user.name %>, <%= @user.email %> <p>
 <%= @user.created_at %>, <%= @user.updated_at %> <p>
-debugger
 <%= Time.now %>
-
+<% provide(:title, @user.name) %>
+<h1>
+  <%=gravatar_for @user %>
+  <%=@user.name %>
+</h1>
