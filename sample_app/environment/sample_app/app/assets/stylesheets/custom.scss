@@ -1,17 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
-
-@mixin box_sizing {
--moz-box-sizing:    border-box;
--webkit-box-sizing: border-box;
-box-sizing:         border-box;
-}
-
-/ * sidebar */
+/* sidebar */
 
 aside {
 section.user_info {
@@ -47,6 +37,18 @@ margin-right: 10px;
 .gravatar_edit {
 margin-top: 15px;
 }
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+-moz-box-sizing:    border-box;
+-webkit-box-sizing: border-box;
+box-sizing:         border-box;
+}
+
+
 /* miscellaneous */
 
 .debug_dump {
