@@ -1,10 +1,11 @@
 require 'test_helper'
 
 class UsersLoginTest < ActionDispatch::IntegrationTest
+    
     def setup
-        @user = users(:michael)
+        @user = users(:teddy)
+        
     end
-    .
     
     test "login with invalid information" do
     get login_path
@@ -14,11 +15,12 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_not flash.empty?
     get root_path
     assert flash.empty?
-    
-    test "login with valid information" do
+end
+
+test "login with valid information" do
     get login_path
     post login_path, params: { session: { email:    @user.email,
-    password: 'password' } }
+        password: 'password' } }
     assert_redirected_to @user
     follow_redirect!
     assert_template 'users/show'
@@ -26,6 +28,5 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", logout_path
     assert_select "a[href=?]", user_path(@user)
 end
-end
-end
+
 end
