@@ -21,3 +21,5 @@ test "user id should be present" do
     assert_not @micropost.valid?
 end
 end
+
+

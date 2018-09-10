@@ -3,7 +3,7 @@
 #require 'rails/test_help'
 
 class ActiveSupport::TestCase
-    fixtures :all
+#    fixtures :all
     
     # Returns true if a test user is logged in.
     def is_logged_in?
