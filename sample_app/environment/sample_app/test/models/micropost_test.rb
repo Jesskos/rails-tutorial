@@ -20,6 +20,9 @@ test "user id should be present" do
     @micropost.user_id = nil
     assert_not @micropost.valid?
 end
-end
 
+test "order should be most recent first" do
+    assert_equal microposts(:most_recent), Micropost.first
+end
+end
 
