@@ -29,4 +29,5 @@ test "should redirect destroy for wrong micropost" do
     assert_redirected_to root_url
 end
 
+
 end
